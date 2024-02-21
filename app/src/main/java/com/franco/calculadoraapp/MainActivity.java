@@ -50,5 +50,4 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "LE DI CLICK A SUMAR", Toast.LENGTH_SHORT).show();
     }
 
-
 }
