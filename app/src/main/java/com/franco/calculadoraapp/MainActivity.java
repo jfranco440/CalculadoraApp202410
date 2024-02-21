@@ -49,5 +49,44 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "LE DI CLICK A SUMAR", Toast.LENGTH_SHORT).show();
     }
+    public void clickRestar(View miviewcita) {
+
+        String num1String = etNum1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = etNUM2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double resultado = num1 - num2;
+
+        tvResultado.setText(resultado.toString());
+        Toast.makeText(this, "LE DI CLICK A RESTAR", Toast.LENGTH_SHORT).show();
+    }
+    public void clickMultiplicar(View miviewcita) {
+
+        String num1String = etNum1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = etNUM2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double resultado = num1 * num2;
+
+        tvResultado.setText(resultado.toString());
+        Toast.makeText(this, "LE DI CLICK A MULTIPLICAR", Toast.LENGTH_SHORT).show();
+    }
+    public void clickDividir(View miviewcita) {
+
+        String num1String = etNum1.getText().toString();
+        Double num1 = Double.parseDouble(num1String);
+
+        String num2String = etNUM2.getText().toString();
+        Double num2 = Double.parseDouble(num2String);
+
+        Double resultado = num1 / num2;
+
+        tvResultado.setText(resultado.toString());
+        Toast.makeText(this, "LE DI CLICK A DIVIDIR", Toast.LENGTH_SHORT).show();
+    }
 
 }
